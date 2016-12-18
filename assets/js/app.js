@@ -62,6 +62,6 @@ $(document).on('ready', function() {
         }
     });
     
-    $('form.contact-form button').attr('disabled', 'disbled');
+    //$('form.contact-form button').attr('disabled', 'disbled');
 
 });
