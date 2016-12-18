@@ -4,4 +4,4 @@ I still have some touches to the contact form(like javascript check before submi
 
 And the images for respective locations are needed.
 
-#My worst performance I gues
+#My worst performance I guess
