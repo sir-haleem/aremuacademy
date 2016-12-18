@@ -1,0 +1,398 @@
+/*.col1{
+	background: #5C7080;
+}
+
+.col2{
+	background: #6BC0FF;
+}
+
+.col3{
+	background: #E8AA4C;
+}
+
+.col4{
+	background: #FF384E;
+}
+
+.row h1{
+	
+}*/
+
+main {
+    padding-top: 60px;
+    background: lightgray;
+}
+
+.footer {
+    max-height: 340px;
+    padding: 10px 0;
+    background: rgb(51, 51, 51);
+    color: lightgray;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.slider-container {
+    border: 2px solid #37474f;
+    /*background: #37474f;*/
+}
+
+.slider {
+    height: 250px;
+    margin: 20px;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+/* Intro Container*/
+
+.intro-container {
+    margin-top: 20px;
+    background: url("/assets/img/Fiverr_Logo.png");
+    height: 350px;
+    /*background: #cfd8dc;*/
+    
+    padding: 0;
+    margin-bottom: 15px;
+    
+    
+
+}
+
+.intro {
+    background: rgba(0, 0, 0, .6);
+    margin: 0;
+    height: 350px;
+    border: 2px solid crimson;
+    border-radius: 0px;    
+}
+
+.intro h1, .intro h2, .vision-container h2 {
+    text-shadow: 2px 2px 0px hsla(140, 3%, 26%, 0.5);
+    background: rgba(207, 216, 220, .7);
+}
+
+
+/*Ends Intro Container*/
+
+
+
+/*Brief Intro*/
+.brief-intro {
+    background: #546e7a;
+}
+
+.brief-intro > h2, .testimonials-container > h2, .vision-container > h2, .news-update-container > h2, .team h2, .course-list-container h2, .application-form-container h2, .new-application h2, .address h2, .contact h2 {
+    background: rgba(207, 216, 220, .7);
+    margin-bottom: 0;
+    border-bottom: 2px solid #546e7a;
+    padding: 10px 0;
+}
+.brief-intro > p {
+    margin-top: 0px;
+    background: #90a4ae;
+    
+    padding: 10px 15px;
+}
+
+
+/*Ends Brief Intro*/
+    
+    
+    
+    
+.testimonials-container {
+    
+    background: #90a4ae;
+    padding-bottom: 15px;
+}
+
+.testimonials, .test, .test .row, .test-img {
+    padding: 0;
+    margin: 0;
+}
+.test {
+    margin-top: 15px; 
+    border: 1px solid darkcyan;
+}
+.test-img{
+    height: 100%;
+    position: relative;
+    padding-top: 15px; 
+}
+
+.test .text{
+    padding-top: 15px;
+    font-size: 120%; 
+    
+}
+
+.text .name {
+    background: #90a4ae;
+    width: 50%;
+    font-size: 120%; 
+    margin-top: 20px; 
+}
+
+
+/*Copy Container*/
+
+.copy-container {
+    
+    background: #263238;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.copy-container .row {
+    
+    background: #90a4ae;
+    margin: 0 15px;
+}
+
+/*Ends copy container*/
+
+
+
+/* Vision Container*/
+
+.vision-container {
+    background: #90a4ae;
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+
+
+.vision-container > p {
+    background: #546e7a;
+    color: rgba(207, 216, 220, .9);;
+    padding: 5px 15px;
+}
+
+/*Ends Vision Container*/
+
+
+.news-update-container {
+    background: #90a4ae;
+    padding-bottom: 15px;
+    border-left: 1px dotted green;
+}
+
+.news {
+    
+    background: #546e7a;
+    padding: 0 15px;
+    border: 1px solid red;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.news:last-of-type {
+    margin-bottom: 0;
+}
+
+.news:first-of-type {
+    margin-top: 15px;
+}
+
+
+/*About Page*/
+
+.brief-intro .text-cont{
+    background: rgb(144, 164, 174);
+    padding: 15px;
+    padding-bottom: 0;
+}
+.vision-container .text-cont{
+    background: rgb(84, 110, 122);
+    padding: 15px;
+    padding-bottom: 0;
+    color: white;
+    overflow: hidden;
+}
+
+
+.team{
+    margin: 20px 0;
+    padding: 15px;
+    background: #546e7a;
+    
+}
+
+.team .row {
+    padding: 15px 15px 0 15px;
+}
+
+.team .member .officer-name{
+    margin-top: 15px;
+    font-size: 120%;
+    font-weight: bold;
+    margin-bottom: 0;
+    background: rgba(207, 216, 220, .4);
+    width: 60%;
+    position: relative;
+    left: 20%;
+}
+
+ .team .member .post {
+    margin-top: 15px;
+    font-size: 120%;
+    margin-bottom: 0;
+    background: rgba(207, 216, 220, .4);
+    width: 70%;
+    left: 15%;
+ }
+
+/* Ends About Page*/
+
+
+/* Course List*/
+
+.course-list-container {
+    background: #90a4ae;
+    margin-bottom: 20px;
+}
+
+
+.course-list-container > div {
+    padding: 0;
+    margin: 0;
+}
+
+.course-list-container .list-group-item {
+    background: #546e7a;
+}
+
+.list-group-item p {
+    margin: 0;
+}
+
+.course-list-container .list-group {
+    border-radius: 0px;
+}
+
+.panel-heading, .panel, .panel-default {
+    padding: 0;
+    margin: 0;
+}
+/* Ends Course List*/
+
+
+/* Application Page*/   
+
+.application-form-container {
+    padding: 0 15px;
+    background: #263238;
+    margin-bottom: 20px;
+}
+
+.application-form {
+    
+    background: #90a4ae;
+}
+
+.application-form div {
+    background: #546e7a;
+
+    padding: 70px 15px 70px 15px;
+}
+.site-application {
+    height: 100%;
+}
+
+
+
+.application-form .form-control {
+    width: 50%;
+    left: 25%;
+    position: relative;
+    border: 3px solid #90a4ae;
+    font-weight: bold;
+    font-size: 150%;
+    color: black;
+}
+
+.application-form .help-block {
+    color: #fff;
+}
+
+.new-application {
+    background: #546e7a;
+    margin-bottom: 20px;
+}
+
+.new-application > p {
+    margin-top: 0px;
+    background: #90a4ae;
+    
+    padding: 10px 15px;
+}
+
+/* Ends APplication Page*/
+
+
+.address {
+    background: #546e7a;
+    margin-bottom: 20px;
+    font-size: 130%;
+}
+
+.address > div {
+    margin-top: 0px;
+    background: #90a4ae;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+}
+
+.contact {
+    background: #90a4ae;
+    margin-bottom: 20px;
+}
+
+.contact > div {
+    background: #546e7a;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+ .contact-form .submit-btn {
+     margin-left: 15px; 
+ }
+.contact-form .form-control, .contact-form .submit-btn {
+    border: 3px solid #37474f;
+    font-weight: bold;
+    font-size: 150%;
+    color: black;
+}
+
+.contact-form .help-block {
+    color: #90a4ae;
+}
