@@ -1,22 +1,20 @@
 
 var appFunctions = {
 
-    slider: function() {
+    slider: function () {
         return $('.slider');
     },
-    testimonials: function() {
+    testimonials: function () {
         return $('.row.testimonials')
     },
-    applicationForm: function() {
+    applicationForm: function () {
         return $('form#application');
     },
-    applicationField: function() {
+    applicationField: function () {
         return $('input#application');
     },
-    contactForm: function() {
-        var contact = $('form.contact-form input');
-
-        contact = contact.add($('form.contact-form textarea'));
+    contactForm: function () {
+        var contact = $('form.contact-form');
 
         return contact;
     }
@@ -25,7 +23,7 @@ var appFunctions = {
 
 }
 
-$(document).on('ready', function() {
+$(document).on('ready', function () {
     // console.log(appFunctions.applicationField().get().length);
     if (appFunctions.slider().get().length > 0) {
         $(".slider").slick({
@@ -47,21 +45,28 @@ $(document).on('ready', function() {
             autoplay: true
         });
     }
-    
+
     console.log(appFunctions.applicationForm());
-    
-    appFunctions.applicationForm().submit(function(evt) {
-        evt.preventDefault();
+
+    appFunctions.applicationForm().submit(function (evt) {
         var fieldLength = appFunctions.applicationField().val().length;
-        if(fieldLength < 0 ) {
+        if (fieldLength < 0) {
+            evt.preventDefault();
+
             $('p.help-block').html('<small class="text-danger">*</small> Provide A Valid Jamb Number');
         }
-        
-        if(fieldLength < 10 || fieldLength > 10) {
+
+        if (fieldLength < 10 || fieldLength > 10) {
+            evt.preventDefault();
+
             $('p.help-block').html('<small class="text-danger">*</small> Your Jamb number should be 10 characters');
         }
     });
-    
-    //$('form.contact-form button').attr('disabled', 'disbled');
+
+    appFunctions.contactForm().submit(function (evt) {
+
+        
+
+    });
 
 });
