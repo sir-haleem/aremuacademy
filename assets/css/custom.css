@@ -1,23 +1,3 @@
-/*.col1{
-	background: #5C7080;
-}
-
-.col2{
-	background: #6BC0FF;
-}
-
-.col3{
-	background: #E8AA4C;
-}
-
-.col4{
-	background: #FF384E;
-}
-
-.row h1{
-	
-}*/
-
 main {
     padding-top: 60px;
     background: lightgray;
@@ -45,6 +25,8 @@ main {
 }
 
 .slider-container {
+    box-shadow: 3px 3px 4px 3px #5b4f60;
+    border-radius: 5px;
     border: 2px solid #37474f;
     /*background: #37474f;*/
 }
@@ -71,6 +53,7 @@ main {
 /* Intro Container*/
 
 .intro-container {
+    box-shadow: 3px 3px 4px 3px #5b4f60;
     margin-top: 20px;
     background: url("/assets/img/Fiverr_Logo.png");
     height: 350px;
@@ -87,13 +70,13 @@ main {
     background: rgba(0, 0, 0, .6);
     margin: 0;
     height: 350px;
-    border: 2px solid crimson;
-    border-radius: 0px;    
 }
 
 .intro h1, .intro h2, .vision-container h2 {
     text-shadow: 2px 2px 0px hsla(140, 3%, 26%, 0.5);
     background: rgba(207, 216, 220, .7);
+    box-shadow: 3px 3px 4px 3px #5b4f60;
+
 }
 
 
@@ -103,14 +86,19 @@ main {
 
 /*Brief Intro*/
 .brief-intro {
+    box-shadow: 3px 3px 4px 3px #5b4f60;
+    border-radius: 5px;
     background: #546e7a;
 }
 
 .brief-intro > h2, .testimonials-container > h2, .vision-container > h2, .news-update-container > h2, .team h2, .course-list-container h2, .application-form-container h2, .new-application h2, .address h2, .contact h2 {
     background: rgba(207, 216, 220, .7);
+    box-shadow: 3px 3px 4px 3px #5b4f60 inset;
     margin-bottom: 0;
     border-bottom: 2px solid #546e7a;
     padding: 10px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .brief-intro > p {
     margin-top: 0px;
@@ -126,23 +114,35 @@ main {
     
     
 .testimonials-container {
-    
-    background: #90a4ae;
-    padding-bottom: 15px;
+    padding-bottom: 15px;   
 }
 
 .testimonials, .test, .test .row, .test-img {
     padding: 0;
     margin: 0;
+    
 }
 .test {
     margin-top: 15px; 
     border: 1px solid darkcyan;
+    
 }
 .test-img{
     height: 100%;
     position: relative;
     padding-top: 15px; 
+}
+
+@media (max-width: 768px) {
+	.test-img {
+        display: none;
+    }
+
+    .test .text {
+        /*text-align: left;*/
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .test .text{
@@ -162,7 +162,8 @@ main {
 /*Copy Container*/
 
 .copy-container {
-    
+    box-shadow: 3px 3px 4px 3px #5b4f60;
+    border-radius: 5px;
     background: #263238;
     padding: 0;
     padding-top: 20px;
@@ -186,21 +187,29 @@ main {
 
 .vision-container {
     background: #90a4ae;
-    padding-bottom: 15px;
     margin-top: 20px;
+    border-radius: 5px; 
+    box-shadow: 3px 3px 4px 3px #5b4f60;
+    border-radius: 5px;
 }
 
 
 .vision-container > p {
     background: #546e7a;
     color: rgba(207, 216, 220, .9);;
-    padding: 5px 15px;
+    padding: 15px;
+     
+}
+
+.site-about #vision{
+    padding-bottom: 15px;
 }
 
 /*Ends Vision Container*/
 
 
 .news-update-container {
+    
     background: #90a4ae;
     padding-bottom: 15px;
     border-left: 1px dotted green;
@@ -227,6 +236,7 @@ main {
 /*About Page*/
 
 .brief-intro .text-cont{
+    
     background: rgb(144, 164, 174);
     padding: 15px;
     padding-bottom: 0;
@@ -241,6 +251,8 @@ main {
 
 
 .team{
+    box-shadow: 3px 3px 4px 3px #5b4f60;
+    border-radius: 5px;
     margin: 20px 0;
     padding: 15px;
     background: #546e7a;
@@ -277,6 +289,8 @@ main {
 /* Course List*/
 
 .course-list-container {
+    box-shadow: 3px 3px 4px 3px #5b4f60;
+    border-radius: 5px;
     background: #90a4ae;
     margin-bottom: 20px;
 }
@@ -293,6 +307,7 @@ main {
 
 .list-group-item p {
     margin: 0;
+    color: white;
 }
 
 .course-list-container .list-group {
@@ -309,6 +324,8 @@ main {
 /* Application Page*/   
 
 .application-form-container {
+    box-shadow: 3px 3px 4px 3px #5b4f60;
+    border-radius: 5px;
     padding: 0 15px;
     background: #263238;
     margin-bottom: 20px;
@@ -322,7 +339,7 @@ main {
 .application-form div {
     background: #546e7a;
 
-    padding: 70px 15px 70px 15px;
+    padding: 70px 15px;
 }
 .site-application {
     height: 100%;
@@ -331,12 +348,12 @@ main {
 
 
 .application-form .form-control {
-    width: 50%;
-    left: 25%;
+    width: 56%;
+    left: 22%;
     position: relative;
     border: 3px solid #90a4ae;
     font-weight: bold;
-    font-size: 150%;
+    font-size: 100%;
     color: black;
 }
 
@@ -345,6 +362,8 @@ main {
 }
 
 .new-application {
+    box-shadow: 3px 3px 4px 3px #5b4f60;
+    border-radius: 5px;
     background: #546e7a;
     margin-bottom: 20px;
 }
@@ -360,6 +379,8 @@ main {
 
 
 .address {
+    box-shadow: 3px 3px 4px 3px #5b4f60;
+    border-radius: 5px;
     background: #546e7a;
     margin-bottom: 20px;
     font-size: 130%;
@@ -373,6 +394,8 @@ main {
 }
 
 .contact {
+    box-shadow: 3px 3px 4px 3px #5b4f60;
+    border-radius: 5px;
     background: #90a4ae;
     margin-bottom: 20px;
 }
@@ -389,7 +412,7 @@ main {
 .contact-form .form-control, .contact-form .submit-btn {
     border: 3px solid #37474f;
     font-weight: bold;
-    font-size: 150%;
+    font-size: 100%;
     color: black;
 }
 
